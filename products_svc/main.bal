@@ -9,6 +9,8 @@ type Product record {
     string 'type;
 };
 
+configurable string port = ?;
+
 table<Product> products = table[];
 service / on new http:Listener(9090) {
 
